@@ -1,0 +1,19 @@
+{
+  "name": "zomentum-2021-hiring-assessment",
+  "version": "1.0.0",
+  "description": "Zomentum-2021 Hiring Assessment Backend REST Interface",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogers9798/Zomentum-2021-Hiring-Assessment.git"
+  },
+  "author": "rogers9798",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rogers9798/Zomentum-2021-Hiring-Assessment/issues"
+  },
+  "homepage": "https://github.com/rogers9798/Zomentum-2021-Hiring-Assessment#readme"
+}
