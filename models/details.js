@@ -2,15 +2,15 @@ var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
 (userSchema = new Schema({
-  ticket_id: Number,
+  ticket_id: String,
   username: String,
   phone: Number,
   timings: {
     type: Date,
-    default: Date.now(),
+    default: Date.now()
   },
   ticket_expired: Boolean,
 })),
-  (User = mongoose.model("Details", userSchema));
+  (Details = mongoose.model("Details", userSchema));
 
 module.exports = Details;

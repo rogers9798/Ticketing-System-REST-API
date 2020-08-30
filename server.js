@@ -14,13 +14,11 @@ var db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error:"));
 db.once("open", function () {});
 
-app.set("views", path.join(__dirname, "views"));
-app.set("view engine", "ejs");
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use(express.static(__dirname + "/views"));
+var indexf = require("./routes/index.js");
+app.use("/", indexf);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
@@ -38,5 +36,5 @@ app.use(function (err, req, res, next) {
 
 var port = 3000;
 app.listen(port, function () {
-  console.log("Express app listening on port ",port);
+  console.log("Express app listening on port ", port);
 });
