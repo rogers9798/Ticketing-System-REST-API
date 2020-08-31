@@ -29,4 +29,16 @@ Zomentum-2021 Hiring Assessment Backend REST Interface
 **Step 5:- Run the project**
 * To run the project, you need to run the command ```npm start```
 
+## Screenshots of POSTMAN API TEST :
+![](screenshots/delete_tid.png)
+![](screenshots/expired.png)
+![](screenshots/get_detail.png)
+![](screenshots/max_record1.png)
+![](screenshots/max_record2.png)
+![](screenshots/max_record3.png)
+![](screenshots/post_detail.png)
+![](screenshots/time_detail.png)
+![](screenshots/time_detail1.png)
+![](screenshots/update_timing.png)
+
 
