@@ -2,17 +2,18 @@
 Zomentum-2021 Hiring Assessment Backend REST Interface
 
 
-### Features
+### Business Cases
 - [X] Create a ticket using name and phone number and timing.
 - [X] Update a ticket using timing.
 - [X] Delete a ticket using name timing.
-- [X] Not allowing more than 20 people to book ticket for a show.
+- [X] Not allowing more than 20 people to book ticket for a timing.
 - [X] Display all ticket using username and timing.
 - [X] Expire a ticket after 8 hours.
 - [X] Cron-job to mark and delete ticket if expired after 8 hours 
 
 
-### How to Setup?
+## Setup for the project
+
 **Step 1:- Install nodejs**
 * Download and follow the steps in the given [link](https://nodejs.org/en/download/) to install nodejs.
 
