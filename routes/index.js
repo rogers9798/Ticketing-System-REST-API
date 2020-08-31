@@ -13,8 +13,10 @@ router.post("/", async (req, res, next) => {
 
   var check_num = await Details.countDocuments({
     ticket_date: ticket_info.ticket_date,
-    slot: ticket_info.slot,
+    "slot.hrs": ticket_info.slot.hrs,
+    "slot.mins":ticket_info.slot.mins,
   });
+  console.log(check_num);
 
   if (Object.keys(check).length === 0 && check_num <= 20) {
     var newticket = new Details({
@@ -37,6 +39,7 @@ router.post("/", async (req, res, next) => {
         res.status(200).json({
           message: "Success...Data entered",
           details: ticket_info,
+          number_of_records_same_time: check_num,
         });
       }
     });
@@ -44,7 +47,7 @@ router.post("/", async (req, res, next) => {
     res.status(409).json({
       message:
         "Record for the given username and phone number already exists or max limit for time slots reached",
-      details: check,
+      number_of_records_same_time: check_num,
     });
   }
 });
@@ -84,33 +87,6 @@ router.get("/:tid", async (req, res) => {
   }
 });
 
-router.patch("/check_expired", async (req, res) => {
-  const curr_date = new Date();
-  const t = parseInt(curr_date.getHours());
-  console.log(t);
-  var check = await Details.updateOne(
-    ({
-      "slot.hrs": {
-        $lte: { $subtract: [t, 8] },
-      },
-    },
-    { ticket_expired: true })
-  );
-
-  if (check.nModified === 0) {
-    res.status(404).json({
-      message: "No ticket is expired",
-    });
-  } else {
-    const dataN = await Details.find({ ticket_expired: true });
-    res.status(200).json({
-      message: "Details for expired ticket have been updated",
-      details: dataN,
-    });
-  }
-  console.log(check);
-});
-
 router.patch("/update_timing", async (req, res) => {
   const tid_data = await Details.updateOne(
     { ticket_id: req.body.tid },
@@ -148,5 +124,6 @@ router.post("/time", async (req, res) => {
   }
   console.log(data_time);
 });
+
 
 module.exports = router;
