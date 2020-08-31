@@ -31,34 +31,34 @@ Zomentum-2021 Hiring Assessment Backend REST Interface
 
 ## Screenshots of POSTMAN API TEST :
 
-* Delete details using Ticket_id
+### Delete details using Ticket_id
 ![](screenshots/delete_tid.png)
 
-* Delete expired tickets using cron-job
+### Delete expired tickets using cron-job
 ![](screenshots/expired.png)
 
-* GET Details using ticket_id
+### GET Details using ticket_id
 ![](screenshots/get_detail.png)
 
-* Max record response-1
+### Max record response-1
 ![](screenshots/max_record1.png)
 
-* Max record response-2
+### Max record response-2
 ![](screenshots/max_record2.png)
 
-* Max record response-3
+### Max record response-3
 ![](screenshots/max_record3.png)
 
-* Enter ticket details
+### Enter ticket details
 ![](screenshots/post-detail.png)
 
-* GET ticket details using timings-1
+### GET ticket details using timings-1
 ![](screenshots/time_detail.png)
 
-* GET ticket details using timings-2
+### GET ticket details using timings-2
 ![](screenshots/time_detail-1.png)
 
-* UPDATE ticket timing 
+### UPDATE ticket timing 
 ![](screenshots/update_timing.png)
 
 
