@@ -22,7 +22,7 @@ Backend REST Interface for ticketing system
 
 **Step 3:- Cloning project**
 * Fork the repository on github.
-* Clone the repository by ```git clone https://github.com/rogers9798/Zomentum-2021-Hiring-Assessment``` 
+* Clone the repository by ```git clone https://github.com/rogers9798/Ticketing-System-REST-API``` 
 
 **Step 4:- Installling modules**
 * To install the nodejs modules which are required to run the project by running command ```npm install``` to install project dependencies
