@@ -1,5 +1,5 @@
-# Zomentum-2021-Hiring-Assessment
-Zomentum-2021 Hiring Assessment Backend REST Interface
+# Ticketing REST API
+Backend REST Interface for ticketing system
 
 
 ### Business Cases
